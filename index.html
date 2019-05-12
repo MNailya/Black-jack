@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<?xml version="1.0" encoding="UTF-8"?>
+		<title>BlackJack</title>
+		<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="result" class="overlay">
+			<div class="result">
+				<div id="btn-close" class="btn-close">x</div>
+				<span id="result-message"></span>
+			</div>
+		</div>
+		<div id="rules" class="overlay">
+			<div class="rules">
+				<div id="btn-close-1" class="btn-close">x</div>
+				<h1>Rules</h1>
+				<p><strong>Objective:</strong>  Get as close to 21 as possible, without going over.</p>
+				<ol>
+					<li>Aces may be counted as 1 or 11 points, 2 to 9 according to pip value, and tens and face cards count as ten points.</li>
+					<li>A player starts with two cards, one of the dealer's cards is hidden until the end.</li>
+					<li>Hit: A player draws another card</li>
+					<li>Stand: A player holds their total and ends their turn.</li>
+					<li>If you go over 21 you bust, and the dealer wins regardless of the dealer's hand.</li>
+					<li>If you are dealt 21 from the start (Ace and 10), you got a blackjack (Natural BlackJack).</li>
+					<li>Dealer will hit until his/her cards total 17 or higher.</li>
+					<li>If a Player and a Dealer both have the same score or a natural blackjack then it is a push.</li>
+					<li>No split is allowed in my casino:P</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<div id="dealer-score" class="score">
+				Score: <span id="dealer-score-1">0</span> | <span id="dealer-score-11">0</span>
+			</div>
+			<div id="dealer-hand" class="hand-area">
+				<div class="hand-area-title">--- Dealer ---</div>
+			</div>
+			<div class="game-title">
+				<span>Single Deck</span>
+				<br/>
+				BlackJack
+			</div>
+			<div id="player-score" class="score">
+				Score: <span id="player-score-1">0</span> | <span id="player-score-11">0</span>
+			</div>
+			<div id="user-hand"  class="hand-area">
+				<div class="hand-area-title">--- Player ---</div>
+			</div>	
+			<div class="control-area">
+				<button id="start" class="btn-active">Start</button>
+				<button id="restart" class="btn-active">End</button>
+				<button id="hit" class="btn-disabled">Hit</button>
+				<button id="stand" class="btn-disabled">Stand</button>
+			</div>
+			<div class="rules_btn">Rules of the Game</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
